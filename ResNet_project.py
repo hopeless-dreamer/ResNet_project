@@ -21,12 +21,12 @@ import time
 import gdown
 import os
 
-url_model = "https://drive.google.com/uc?id=1zYbxLJGjfKWrYIxk2deG8gvCZ9tyF_Ba"
+url_model = "https://drive.google.com/file/d/14HfVKmqASLDfENbJOwPQMquS7_Judx_t/view?usp=drive_link"
 model1 = "model.pth"
 if not os.path.exists(model1):
     gdown.download(url_model, model1, quiet=False)
 
-url_best_model = "https://drive.google.com/uc?id=1zIxlMFoFaBc7zj6WeGw91UdQyaJ3gLmy"
+url_best_model = "https://drive.google.com/file/d/1AWKALYW74yUP3vT5iNzyzT21VTAsllHR/view?usp=drive_link"
 model2 = "best_model_blood_cells.pt"
 if not os.path.exists(model2):
     gdown.download(url_best_model, model2, quiet=False)
